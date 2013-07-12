@@ -12,9 +12,9 @@
 |
 | If this is not set then CodeIgniter will guess the protocol, domain and
 | path to your installation.
-|
+| jagl por defecto si no le coloco nada tomara como http://localhost/ 
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://localhost/ci-cf/';
 
 /*
 |--------------------------------------------------------------------------
