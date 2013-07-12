@@ -5,6 +5,6 @@
 	<title>Bienvenido</title>
 </head>
 <body>
-	<h1>Llamado desde el controlador Codigofacilito</h1>
+	<h1>Llamado desde el controlador Códigofacilito</h1>
 </body>
 </html>
