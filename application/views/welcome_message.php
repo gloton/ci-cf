@@ -7,7 +7,7 @@
 <body>
 
 <div id="container">
-	<h1>Hola mundo</h1>
+	<h1><?php echo $string; ?></h1>
 	<p>La pagina application/views/welcome_message.php es la que se muestra por defecto</p>
 </div>
 
