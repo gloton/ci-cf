@@ -8,6 +8,7 @@ class Codigofacilito extends CI_Controller {
 		$this->load->view('codigofacilito/bienvenido');
 	}
 	function holamundo() {
+		$this->load->view('codigofacilito/headers');
 		$this->load->view('codigofacilito/bienvenido');
 	}
 }
