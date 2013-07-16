@@ -1,5 +1,5 @@
 <?php
 	function getNombre() {
-		return "<h1>Jorge<h1>";
+		return "<h1>Jorge</h1>";
 	}
 ?>

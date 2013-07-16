@@ -6,7 +6,10 @@ class Codigofacilito extends CI_Controller {
 	}
 	
 	function index() {
+		//el parametro de library no es case-sensitive ("menu"),
+		$this->load->library("menu", array("Inicio","Contacto","Cursos") );
+		$data["mi_menu"] = $this->menu->construirMenu();
 		$this->load->view('codigofacilito/headers');
-		$this->load->view('codigofacilito/bienvenido');
-	}
+		$this->load->view('codigofacilito/bienvenido',$data);
+ 	} 
 }
