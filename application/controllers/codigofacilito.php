@@ -2,7 +2,8 @@
 class Codigofacilito extends CI_Controller {
 	function __construct() {
 		parent::__construct();
-		$this->load->helper("mihelper");
+//		$this->load->helper("mihelper");
+		$this->load->helper("form");
 	}
 	
 	function index() {
@@ -12,4 +13,9 @@ class Codigofacilito extends CI_Controller {
 		$this->load->view('codigofacilito/headers');
 		$this->load->view('codigofacilito/bienvenido',$data);
  	} 
+ 	
+ 	function nuevo() {
+		$this->load->view('codigofacilito/headers');
+		$this->load->view('codigofacilito/formulario');
+ 	}
 }
