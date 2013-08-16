@@ -2,7 +2,7 @@
 # form_open
 #el primer parametro se especifica el action
 #el segundo se podria especificar una clase
-echo form_open('/codigofacilito/recibirdatos');
+echo form_open('/cursos/recibirdatos');
 $nombre =	array(
 			'name'			=>	'nombre',	
 			'placeholder'	=>	'Escribe tu nombre'	
