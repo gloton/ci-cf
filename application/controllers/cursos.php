@@ -8,8 +8,21 @@ class Cursos extends CI_Controller {
 	
 	//desplegar todos los cursos ingresados
 	function index() {
-		$data['cursos'] = $this->codigofacilito_model->obtenerCursos();
+		# segment
+		#este metodo segment va a retornar el segmento de la url
+		#dependiendo del indice que nosotros mandemos por aca
+		#ejem:http://localhost/ci-cf/index.php/cursos/nuevo
+		#cursos es el 1
+		#nuevo es el 2
+		#luego viene el 3 que es que queremos retornar
+		$data['segmento'] = $this->uri->segment(3);
 		$this->load->view('codigofacilito/headers');
+		//verifica si el usuario esta mandando el segmento 3
+		if (!$data['segmento']) {
+			$data['cursos'] = $this->codigofacilito_model->obtenerCursos();
+		} else {
+			$data['cursos'] = $this->codigofacilito_model->obtenerCurso($data['segmento']);
+		}
 		$this->load->view('cursos/cursos',$data);
 		
 	}

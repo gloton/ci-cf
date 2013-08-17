@@ -2,9 +2,9 @@
 
 
 <?php
-	foreach ($cursos->result() as $cursos) {
+	foreach ($cursos->result() as $curso) {
 ?>	
-		<li><?php echo $cursos->nombreCurso; ?></li>		
+		<li><?php echo $curso->nombreCurso; ?></li>		
 <?php
 	}
 ?>
